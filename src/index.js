@@ -1,4 +1,4 @@
-const appContainer = document.querySelector("app");
-const header = document.createElement("h2");
-header.innerHTML = "Your database for details on the hottest games";
-appContainer.appendChild(mainHeader);
+const Deact = require("./libs/deact");
+const App = require("./components/App");
+
+Deact.render(App(), document.querySelector(".app"));
